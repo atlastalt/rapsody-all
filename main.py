@@ -70,7 +70,7 @@ while keep_alive:
             planet_x = 10
         else:
             print('YOU WIN')
-            keep_alive = False
+            keep_alive = true
 
     pygame.display.update()
     clock.tick(60)

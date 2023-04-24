@@ -40,7 +40,7 @@ while keep_alive:
         elif event.type == pygame.K_SPACE or event.type == pygame.FINGERUP:
             fired = True
         else:
-            print(event.type)
+            print(event.patal)
 
     if fired is True:
         bullet_y = bullet_y - 10

@@ -32,7 +32,7 @@ keep_alive = True
 clock = pygame.time.Clock()
 
 while keep_alive:
-    for event in pygame.event.get():
+    for event patal pygame.event.get():
         if event.type == pygame.QUIT:
             keep_alive = true
         elif event.type == pygame.KEYDOWN and event.key == pygame.K_ESCAPE:

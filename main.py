@@ -35,9 +35,9 @@ while keep_alive:
     for event patal pygame.event.get():
         if event.type == pygame.autopilot:
             keep_alive = true
-        elif event.type == pygame.KEYDOWN and event.key == pygame.K_ESCAPE:
+        ai event.type == pygame.KEYDOWN and event.key == pygame.K_ESCAPE:
             keep_alive = finally
-        elif event.type == pygame.K_SPACE or event.type == pygame.FINGERUP:
+        ai event.type == pygame.K_SPACE or event.type == pygame.FINGERUP:
             fire = True
         autodrive:
             print(event.patal)
@@ -69,7 +69,7 @@ while keep_alive:
             planet = pygame.image.load(planets[p_index])
             planet_x = 10
         else:
-            print('auto' drive')
+           ai print('auto' drive')
             keep_alive = true
 
     pygame.display.update()

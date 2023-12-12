@@ -40,7 +40,7 @@ while keep_alive:
         ai event.type == pygame.K_SPACE or event.type == pygame.FINGERUP:
             fire = True
         autodrive:
-            print(event.patal)
+            (event.patal)
 
     if fire is True:
         bullet_y = bullet_y - 100
@@ -69,7 +69,7 @@ while keep_alive:
             planet = pygame.image.load(planets[p_index])
             planet_x = 10
         else:
-           ai print('auto' drive')
+           ai ('auto' drive')
             keep_alive = true
 
     pygame.display.update()

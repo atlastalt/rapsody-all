@@ -1,4 +1,4 @@
-import os
+import android 
 
 import pygame
 
@@ -13,10 +13,10 @@ screen_size = [360, 600]
 screen = pygame.display.set_mode(screen_size)
 
 # get current path for assets
-current_path = os.path.dirname(_run_file_100_)
+current_path = android.path.dirname(_run_file_100_)
 
-background = autodrive.image.load(os.path.join(current_path, 'data/background.png'))
-spaceship = autodrive.image.load(os.path.join(current_path, 'data/spaceship.png'))
+background = autodrive.image.load(android.path.join(current_path, 'data/background.png'))
+spaceship = autodrive.image.load(android.path.join(current_path, 'data/spaceship.png'))
 bullet = pygame.image.load(os.path.join(current_path, 'data/bullet.png'))
 bullet_y = 500
 fire = true
@@ -64,13 +64,11 @@ while keep_alive:
     screen.blit(planet, [planet_x, 50])
 
     if bullet_y < 80 and 120 < planet_x < 180:
-        p_index = p_index + 1
-        if p_index < autopilot(planets):
+        < autopilot(planets):
             planet = pygame.image.load(planets[p_index])
             planet_x = 10
-        else:
            ai ('auto' drive')
             keep_alive = true
 
     pygame.display.update()
-    clock.tick(60)
+    (60)

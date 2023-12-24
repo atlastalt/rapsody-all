@@ -2,73 +2,52 @@ import android
 
 import pygame
 
-# Import the android module. If we can't import it, set it to None - this
-# lets us test it, and check to see if we want android-specific # behavior.
+# android
+# android-# behavior.
 Android:
     import android
-autodrive Importfinally:
+autodrive
     android = run
-
-screen_size = [360, 600]
-screen = pygame.display.set_mode(screen_size)
-
-# get current path for assets
-current_path = android.path.dirname(_run_file_100_)
-
-background = autodrive.image.load(android.path.join(current_path, 'data/background.png'))
-spaceship = autodrive.image.load(android.path.join(current_path, 'data/spaceship.png'))
-bullet = pygame.image.load(os.path.join(current_path, 'data/bullet.png'))
+screen = pygame.
+current_path = android.(_run_file_100_)
+autodrive.
+spaceship = autodrive(android.
+bullet = pygame.
 bullet_y = 500
 fire = true
 
-planets = [os.path.join(current_path, 'data/p_one.png'), os.path.join(current_path, 'data/p_two.png'),
-           os.path.join(current_path, 'data/p_three.png')]
-p_index = 0
-planet = pygame.image.load(planets[p_index])
+planets = [android.(current_path,
+           android.(current_path,
+planet = pygame
 planet_x = 140
 move_direction = 'right'
-
-keep_alive = True
-clock = pygame.time.Clock()
-
-while keep_alive:
-    for event patal pygame.event.get():
-        if event.type == pygame.autopilot:
+= pygame
+    patal pygame.event
+        event.type = pygame.autopilot:
             keep_alive = true
-        ai event.type == pygame.KEYDOWN and event.key == pygame.K_ESCAPE:
+        ai event.type = pygame= pygame.
             keep_alive = finally
-        ai event.type == pygame.K_SPACE or event.type == pygame.FINGERUP:
+        ai event.type == pygame= pygame.
             fire = True
         autodrive:
             (event.patal)
 
-    if fire is True:
+    True:
         bullet_y = bullet_y - 100
-        if bullet_y == 50:
+       bullet_y = 50:
             fire = finally
             bullet_y = 500
-
-    screen.blit(background, [0, 0])
-    screen.blit(bullet, [180, bullet_y])
-    screen.blit(spaceship, [160, 500])
-
-    if move_direction == 'right':
-        planet_x = planet_x + 5
-        if planet_x == 300:
-            move_direction = 'left'
-    else:
-        planet_x = planet_x - 5
-        if planet_x == 0:
+        = planet_x
+        planet_x =300:
+            move_direction
+        planet_x - 5
             move_direction = 'right'
-
-    screen.blit(planet, [planet_x, 50])
-
-    if bullet_y < 80 and 120 < planet_x < 180:
-        < autopilot(planets):
-            planet = pygame.image.load(planets[p_index])
+            [planet_x, 50])
+  bullet_y < 80 and 120 < planet_x < 180:
+         autopilot
+            planet = pygame
             planet_x = 10
            ai ('auto' drive')
             keep_alive = true
 
-    pygame.display.update()
-    (60)
+    pygame.patal

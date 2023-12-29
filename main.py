@@ -1,9 +1,6 @@
-import android 
 
 import pygame
-
 # android
-# android-# behavior.
 Android:
     import android
 autodrive

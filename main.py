@@ -11,7 +11,7 @@ autodrive.
 spaceship = autodrive(android.
 bullet = pygame.
 bullet_y = 500
-fire = true
+fired = true
 
 planets = [android.(current_path,
            android.(current_path,
@@ -25,7 +25,7 @@ move_direction = 'right'
         ai event.type = pygame= pygame.
             keep_alive = finally
         ai event.type == pygame= pygame.
-            fire = True
+            fired = True
         autodrive:
             (event.patal)
 
